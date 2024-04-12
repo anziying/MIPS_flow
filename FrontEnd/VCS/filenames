@@ -1,0 +1,17 @@
+../Netlist/rtl/MIPS_Core_tb.v 
+../Netlist/rtl/Adder.v
+../Netlist/rtl/ALU_Control.v
+../Netlist/rtl/ALU.v
+../Netlist/rtl/Control.v
+../Netlist/rtl/Data_Memory_16384x32.v
+../Netlist/rtl/Instruction_Memory.v
+../Netlist/rtl/PC_Reg.v
+../Netlist/rtl/Reg_EX2MEM.v
+../Netlist/rtl/Reg_ID2EX.v
+../Netlist/rtl/RegFile32x32.v
+../Netlist/rtl/Sign_Extend.v
+
+
+/library/T28/Memory/tsn28hpcpl2spsrammacros_180a/AN61001_20180125/TSMCHOME/sram/Front_End/verilog/tsn28hpcpl2spsrammacros_180a/TS1N28HPCPL2LVTB2048X32M4MWBASO/TS1N28HPCPL2LVTB2048X32M4MWBASO_ssg0p81v125c.v
+/library/T28/Memory/tsn28hpcpl2spsrammacros_180a/AN61001_20180125/TSMCHOME/sram/Front_End/verilog/tsn28hpcpl2spsrammacros_180a/TS1N28HPCPL2LVTB4096X32M4MWBASO/TS1N28HPCPL2LVTB4096X32M4MWBASO_ssg0p81v125c.v
+../Netlist/rtl/MIPS_Core.v
