@@ -112,7 +112,7 @@ module MIPS_Core (
     output wire [31:0] ALU_result;
     wire zero;
 
-    ALU(.A(readData1_EX), .B(ALUdata2), .control(ALU_sel), .S(ALU_result), .carryout(), .zero(zero), .overflow());
+    ALU alu(.A(readData1_EX), .B(ALUdata2), .control(ALU_sel), .S(ALU_result), .carryout(), .zero(zero), .overflow());
 
     wire [31:0] branchAddr;
     assign branchAddr = PC_incr4_EX + {immediate_extended_EX[29:0], 2'b00};
