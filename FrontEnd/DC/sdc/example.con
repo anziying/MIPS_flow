@@ -1,0 +1,12 @@
+create_clock [get_ports clk_i] -name CLK -period 1.6 -waveform {0 0.08} -add
+set_clock_uncertainty -setup 0.4 [get_clocks CLK]
+set_clock_uncertainty -hold 0 [get_clocks CLK]
+set_max_transition 0.15 -clock_path [get_clocks CLK]
+create_clock -name VCLK -period 1.6 -waveform {0 0.8}
+set_clock_uncertainty -setup 0.4 [get_clocks VCLK]
+set_clock_uncertainty -hold 0 [get_clocks VCLK]
+set_max_transition 0.15 -clock_path [get_clocks VCLK]
+set_false_path -from [list [get_ports scan_mode] [get_ports bist_mode]]
+# set_multicycle_path
+set_input_delay -clock VCLK -max 0.96 [remove_from_collection [all_inputs] [get_ports clk]]
+set_clock_groups -asynchronous -name Main_ASYN_CLOCKS -group [all_clocks]
